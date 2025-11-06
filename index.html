@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="font-sans antialiased text-gray-800">
+
     <nav class="fixed w-full bg-white shadow-sm z-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="flex justify-between h-16">
@@ -21,6 +22,7 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="#about" class="nav-link text-gray-700 hover:text-blue-600">About</a>
                     <a href="#experience" class="nav-link text-gray-700 hover:text-blue-600">Experience</a>
+                    <a href="#projects" class="nav-link text-gray-700 hover:text-blue-600">Projects</a>
                     <a href="#education" class="nav-link text-gray-700 hover:text-blue-600">Education</a>
                     <a href="#skills" class="nav-link text-gray-700 hover:text-blue-600">Skills</a>
                     <a href="#contact" class="nav-link text-gray-700 hover:text-blue-600">Contact</a>
@@ -38,6 +40,7 @@
         <div class="flex flex-col space-y-4">
             <a href="#about" class="text-lg text-gray-700 hover:text-blue-600">About</a>
             <a href="#experience" class="text-lg text-gray-700 hover:text-blue-600">Experience</a>
+            <a href="#projects" class="text-lg text-gray-700 hover:text-blue-600">Projects</a>
             <a href="#education" class="text-lg text-gray-700 hover:text-blue-600">Education</a>
             <a href="#skills" class="text-lg text-gray-700 hover:text-blue-600">Skills</a>
             <a href="#contact" class="text-lg text-gray-700 hover:text-blue-600">Contact</a>
@@ -206,8 +209,65 @@
         </div>
     </section>
 
-    <section id="education" class="py-20 bg-gray-50">
+    <section id="projects" class="py-20 bg-gray-50">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-bold text-gray-900 mb-4">Featured Projects</h2>
+                <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="100">
+                    <img src="static/Pantalla.png" alt="EvoPendulum simulation" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">EvoPendulum</h3>
+                        <div class="flex flex-wrap gap-2 my-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Unity</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">C#</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Neuroevolution</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Genetic Algorithms</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            An artificial life simulation where agents with neural networks learn from scratch to dodge chaotic double pendulums. It includes a custom genetic algorithm and a real-time "brain" visualizer.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="https://asaezs.github.io/EvoPendulum/" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition">
+                                Live Demo
+                            </a>
+                            <a href="https://github.com/asaezs/EvoPendulum" target="_blank" class="border border-blue-600 text-blue-600 px-5 py-2 rounded-lg font-medium hover:bg-blue-50 transition">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden" data-aos="fade-up" data-aos-delay="200">
+                    <img src="static/ZoomALaIzq.png" alt="Mandelbrot's render section" class="w-full h-56 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-2xl font-bold text-gray-900 mb-3">MandelbrotGPU</h3>
+                        <div class="flex flex-wrap gap-2 my-4">
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">Python</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">PyOpenGL</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">GLSL</span>
+                            <span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">GPGPU</span>
+                        </div>
+                        <p class="text-gray-600 mb-6">
+                            An interactive fractal explorer that calculates and renders the Mandelbrot set 100% on the GPU using GLSL shaders. It implements "infinite" zoom with 64-bit (double) precision and progressive rendering for optimal performance.
+                        </p>
+                        <div class="flex gap-4">
+                            <a href="https://github.com/asaezs/MandelbrotGPU" target="_blank" class="bg-blue-600 text-white px-5 py-2 rounded-lg font-medium hover:bg-blue-700 transition">
+                                View Project
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-20 bg-white"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">Education</h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
@@ -218,8 +278,7 @@
                     <div class="absolute h-full border-l-2 border-blue-200 left-4"></div>
                     
                     <div class="relative mb-12 timeline-item" data-aos="fade-up">
-                        <div class="bg-white p-6 rounded-lg shadow-sm">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Universidad Politécnica de Madrid</h3>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm"> <h3 class="text-xl font-bold text-gray-900 mb-2">Universidad Politécnica de Madrid</h3>
                             <div class="flex items-center text-gray-600 mb-4">
                                 <i data-feather="calendar" class="mr-2"></i>
                                 <span>2020 - 2025</span>
@@ -230,8 +289,7 @@
                     </div>
                     
                     <div class="relative mb-12 timeline-item" data-aos="fade-up" data-aos-delay="100">
-                        <div class="bg-white p-6 rounded-lg shadow-sm">
-                            <h3 class="text-xl font-bold text-gray-900 mb-2">Universidad Politécnica de Madrid</h3>
+                        <div class="bg-gray-50 p-6 rounded-lg shadow-sm"> <h3 class="text-xl font-bold text-gray-900 mb-2">Universidad Politécnica de Madrid</h3>
                             <div class="flex items-center text-gray-600 mb-4">
                                 <i data-feather="calendar" class="mr-2"></i>
                                 <span>2019 - 2020</span>
@@ -245,16 +303,14 @@
         </div>
     </section>
 
-    <section id="skills" class="py-20 bg-white">
-        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <section id="skills" class="py-20 bg-gray-50"> <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="text-center mb-16" data-aos="fade-up">
                 <h2 class="text-3xl font-bold text-gray-900 mb-4">Technical Skills</h2>
                 <div class="w-20 h-1 bg-blue-600 mx-auto"></div>
             </div>
             
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm skill-card transition duration-300" data-aos="fade-up">
-                    <div class="flex items-center mb-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm skill-card transition duration-300" data-aos="fade-up"> <div class="flex items-center mb-4">
                         <div class="bg-blue-100 p-3 rounded-full mr-4">
                             <i data-feather="code" class="text-blue-600"></i>
                         </div>
@@ -268,8 +324,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm skill-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center mb-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm skill-card transition duration-300" data-aos="fade-up" data-aos-delay="100"> <div class="flex items-center mb-4">
                         <div class="bg-blue-100 p-3 rounded-full mr-4">
                             <i data-feather="cpu" class="text-blue-600"></i>
                         </div>
@@ -284,8 +339,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm skill-card transition duration-300" data-aos="fade-up" data-aos-delay="200">
-                    <div class="flex items-center mb-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm skill-card transition duration-300" data-aos="fade-up" data-aos-delay="200"> <div class="flex items-center mb-4">
                         <div class="bg-blue-100 p-3 rounded-full mr-4">
                             <i data-feather="git-merge" class="text-blue-600"></i>
                         </div>
@@ -297,8 +351,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm skill-card transition duration-300" data-aos="fade-up">
-                    <div class="flex items-center mb-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm skill-card transition duration-300" data-aos="fade-up"> <div class="flex items-center mb-4">
                         <div class="bg-blue-100 p-3 rounded-full mr-4">
                             <i data-feather="database" class="text-blue-600"></i>
                         </div>
@@ -310,8 +363,7 @@
                     </div>
                 </div>
                 
-                <div class="bg-gray-50 p-6 rounded-xl shadow-sm skill-card transition duration-300" data-aos="fade-up" data-aos-delay="100">
-                    <div class="flex items-center mb-4">
+                <div class="bg-white p-6 rounded-xl shadow-sm skill-card transition duration-300" data-aos="fade-up" data-aos-delay="100"> <div class="flex items-center mb-4">
                         <div class="bg-blue-100 p-3 rounded-full mr-4">
                             <i data-feather="users" class="text-blue-600"></i>
                         </div>
